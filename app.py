@@ -4,7 +4,7 @@ import os
 import aws_cdk as cdk
 
 from resmed.resmed_stack import ResmedStack
-
+from resmed.iot_device_stack import IotDeviceStack
 
 app = cdk.App()
 ResmedStack(app, "ResmedStack",
@@ -24,5 +24,7 @@ ResmedStack(app, "ResmedStack",
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
+
+# IotDeviceStack(app,"IotDeviceStack")
 
 app.synth()
